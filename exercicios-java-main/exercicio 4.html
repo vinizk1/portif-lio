@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página HTML com JavaScript</title>
+</head>
+<body style="background: rgb(2,0,36);
+background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);">
+    <h1>Aperte o botão</h1>
+
+    <button id="meuBotao">Clique Aqui!</button>
+
+    <p id="minhaMensagem"></p>
+    
+    <script>
+        document.getElementById("meuBotao").addEventListener("click",
+        function (){
+            document.getElementById("minhaMensagem").innerHTML="Parabéns, você apertou o botão";
+        }
+        )
+    </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+</head>
+
+<body
+    style="background: rgb(248,250,0);
+background: linear-gradient(90deg, rgba(248,250,0,1) 0%, rgba(186,203,15,1) 37%, rgba(76,247,254,1) 65%, rgba(0,212,255,1) 100%);">
+    <h1>Aula 5</h1>
+    <label for="nome">Nome
+        <input type="text" id="nome" placeholder="Digite seu nome">
+    </label>
+    <br>
+    <br>
+    <br>
+    <button id="meuBotao">Aperte aqui!</button>
+    <br>
+    <br>
+    <p id="minhaMensagem">Aqui está o meu paragráfaro lindo e maravilhoso</p>
+
+    <script>
+        document.getElementById("meuBotao").addEventListener("click",
+            function () {
+                var nome = document.getElementById("nome").value
+
+                if (nome) {
+                    document.getElementById("minhaMensagem").innerHTML = "Obrigado por digitar seu nome" +" "+ nome +" "+ "seja bem vindo!";
+                } else{
+                    document.getElementById("minhaMensagem").innerHTML = "digite seu nome";
+                }
+            }
+        );
+
+    </script>
+</body>
+
+</html>

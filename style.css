@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e6; 
+    color: #5c3d2e;
+}
+
+header {
+    background: black url("imagem.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1, h2 {
+    font-family: 'Courier New', Courier, monospace; /* Fonte com estilo rústico */
+}
+
+#sobre-mim, #projetos, #habilidades {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #5c3d2e;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #5c3d2e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

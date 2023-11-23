@@ -1,0 +1,76 @@
+/*define o estilo do corpo do html, incluindo a posição, fonte, alinhamento de texto, cor de fundo e tratamento de conteúdo excedente. */
+body {
+    position: relative;
+    font-family: 'Gothic', sans-serif;
+    text-align: center;
+    background: #1c1c1c; 
+    overflow: hidden; 
+}
+/* esta propriedade do body, basicamente se posiciona na frente do body. As propriedades dentro são usadas para criar um efeito visual, adicionando circulos com degradê. */
+body::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, transparent 40%, #5a189a 45%, #1c1c1c 47%);
+    border-radius: 50%;
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: -1;
+    transform: rotate(30deg);
+}
+/*o after funciona como o before, porem e o ultimo elemto do body. Esse código cria um efeito visual de um fundo circular com degradê roxo escuro e um pouco transparente, posicionado atrás do body com uma inclinação para a esquerda. */
+body::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, transparent 40%, #9d4edd 45%, #1c1c1c 47%);
+    border-radius: 50%;
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: -1;
+    transform: rotate(-30deg);
+}
+/* Ajusta o tamanho da foto */
+.foto{
+    width: 20rem;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 30px auto;
+    width: 320px;
+}
+
+.titulo{
+    color: #fff;
+}
+
+.cell{
+    font-size: 24px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #2b2b2b;
+    cursor: pointer;
+    border: 2px solid #4d4d4d;
+    color: #fff;
+}
+/* deixa a cor do quadradinho roxo ao passar o mouse em cima dele */
+.cell:hover{
+    background-color: #5a189a;
+}
+/* exibe a mensagem de quem ganhou, ou empate na cor branca */
+.message{
+    font-size: 40px;
+    margin: 30px;
+    color: #fff;
+}
