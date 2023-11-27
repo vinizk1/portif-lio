@@ -2,9 +2,12 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    text-align: center;
 }
 
-
+#botaos {
+    text-align: center;
+}
 
 body {
     font-family: Arial, sans-serif;
