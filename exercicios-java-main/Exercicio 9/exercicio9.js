@@ -15,7 +15,8 @@ let botaoDivertido = document.getElementById("botaoDivertido");
 let mensagemDivertida = document.getElementById("mensagemDivertida");
 
 botaoDivertido.addEventListener('click', function(){
-    const mensagemAleatoria = mensagensDivertidas[Math.floor(Math.random() * mensagensDivertidas.lenght)]
 
-    mensagemDivertida.textContent = mensagemAleatoria;
-})
+    const mensagemAleatoria = mensagensDivertidas[Math.floor(Math.random() * mensagensDivertidas.length)]
+
+    mensagemDivertida.textContent =  mensagemAleatoria;
+} )
